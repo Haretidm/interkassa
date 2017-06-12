@@ -71,7 +71,7 @@ public class ListHelperUtil {
 	    final List<Leaf> notInCriteria = new LinkedList<>();
 		int accumulator = 0;
 		for (Leaf leaf : list) {
-			if (accumulator >= w_constant){
+			if (accumulator > w_constant){
 				notInCriteria.add(leaf);
 			} else {
 				inCriteria.add(leaf);
